@@ -1,5 +1,5 @@
 :root {
-  --primary: rgb(34 38 68);
+  --primary: rgb(34, 38, 68);
   --white: #fff;
   --box-shadow: rgba(0, 0, 0, 0.1);
   --header-height: 60px;
@@ -39,12 +39,6 @@ body {
   height: var(--header-height);
 }
 
-.header__hamburger {
-  background-color: var(--bg-white);
-  cursor: pointer;
-  border: none;
-}
-
 .header__logo {
   display: inline-flex;
   align-self: center;
@@ -73,6 +67,8 @@ input {
   cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
+  margin-right: 40px;
+  font-family: "arial";
 }
 
 .btn:hover {
@@ -97,30 +93,18 @@ input {
   border-color: var(--bg-hover);
 }
 
-.btn-md {
-  padding: var(--size-08);
-  font-size: var(--size-09);
-}
-
-.btn-lg {
-  padding: var(--size-09);
-  font-size: var(--size-1-4);
-}
-
 .hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
+
 .hero h1 {
-  font-family: "Ubuntu";
+  font-family: "arial";
   font-weight: bolder;
   font-size: 64px;
 }
@@ -128,4 +112,117 @@ input {
 .hero p {
   font-size: 30px;
   text-align: center;
+  font-family: "arial";
+}
+
+.parte2 {
+  background-size: cover;
+  background-position: center;
+  height: 730px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff; /* Cambia el color a tu preferencia */
+}
+
+.parte3 {
+  background-size: cover;
+  background-position: center;
+  height: 730px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #dfcaf9; /* Cambia el color a tu preferencia */
+}
+
+.parte4 {
+  background-size: cover;
+  background-position: center;
+  height: 730px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff; /* Cambia el color a tu preferencia */
+}
+
+.parte5 {
+  background-size: cover;
+  background-position: center;
+  height: 730px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff; /* Cambia el color a tu preferencia */
+}
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.parte6 {
+  background-size: cover;
+  background-position: center;
+  height: 730px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #c69efb; /* Cambia el color a tu preferencia */
+}
+
+.parte7 {
+  background-size: cover;
+  background-position: center;
+  height: 730px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f6eaf5; /* Cambia el color a tu preferencia */
+}
+
+.parte8 {
+  background-size: cover;
+  background-position: center;
+  height: 730px;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff; /* Cambia el color a tu preferencia */
 }
