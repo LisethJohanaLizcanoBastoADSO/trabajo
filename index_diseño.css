@@ -5,17 +5,13 @@
   --header-height: 60px;
   --max-width: 1024px;
   --radius: 0.4rem;
-  --font-open-sans: "Open Sans", sans-serif;
+  --font-ubuntu: "arial";
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: #ead9ff;
 }
 
 .header {
@@ -35,20 +31,34 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   height: var(--header-height);
 }
 
-.header__logo {
-  display: inline-flex;
+/*.header__logo {
+  /* display: inline-flex;
   align-self: center;
   align-items: center;
   text-decoration: none;
-}
+  margin-left: 50px; 
+}*/
 
+.header__buttons,
 .header__search {
   display: flex;
-  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.header__input {
+  background-color: #f6f6f6;
+}
+
+.search__btn {
+  background: #9546ff;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0px 9px 9px 0px;
 }
 
 input {
@@ -59,33 +69,74 @@ input {
 }
 
 .btn {
-  background-color: #133d63;
-  color: white;
+  background-color: #9546ff;
+  color: var(--white);
   font-size: 75%;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 10px;
   font-family: "arial";
 }
 
-.btn:hover {
-  color: var(--bg-primary);
-  background: var(--bg-white);
-  border: 1px solid;
-  border-color: var(--bg-primary);
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.btn--link {
-  background: var(--white);
-  border-color: var(--white);
+.nav__link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.nav__link--boder {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 75%;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: "arial";
+  border-width: 1.9px;
+  border-style: solid;
+  border-color: #b98df1;
+}
+.nav__link--solido {
+  background-color: #9546ff;
+  color: var(--white);
+}
+
+.btn__01 {
+  background-color: transparent;
+  color: var(--black);
+  font-size: 75%;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: "arial";
+  border-width: 1.9px;
+  border-style: solid;
+  border-color: #b98df1;
+}
+
+.btn:hover {
+  color: white; /*color de pagina.*/
+  background: #7930df;
+}
+
+.btn__00 .btn--link {
   text-decoration: none;
   text-align: center;
-  color: var(--color-gray);
   padding: 8px;
-  border-radius: var(--radius);
 }
 
 .btn--link:hover {
@@ -94,28 +145,22 @@ input {
 }
 
 .hero {
+  background-color: #ead9ff;
+  background-size: cover;
+  background-position: center;
+  height: 730px;
+  align-items: center;
   position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 
-.hero h1 {
-  font-family: "arial";
-  font-weight: bolder;
-  font-size: 64px;
-}
-
-.hero p {
-  font-size: 30px;
-  text-align: center;
-  font-family: "arial";
-}
-
+.parte,
 .parte2 {
+  background-color: var(--white);
   background-size: cover;
   background-position: center;
   height: 730px;
@@ -125,12 +170,10 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
-  background-color: #ffffff; /* Cambia el color a tu preferencia */
 }
-
 .parte3 {
+  background-color: #ead9ff;
   background-size: cover;
   background-position: center;
   height: 730px;
@@ -140,12 +183,11 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
-  background-color: #dfcaf9; /* Cambia el color a tu preferencia */
 }
 
 .parte4 {
+  background-color: var(--white);
   background-size: cover;
   background-position: center;
   height: 730px;
@@ -155,12 +197,10 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
-  background-color: #ffffff; /* Cambia el color a tu preferencia */
 }
-
 .parte5 {
+  background-color: var(--white);
   background-size: cover;
   background-position: center;
   height: 730px;
@@ -170,19 +210,10 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
-  background-color: #ffffff; /* Cambia el color a tu preferencia */
 }
-.card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .parte6 {
+  background-color: #d3b8f5;
   background-size: cover;
   background-position: center;
   height: 730px;
@@ -192,26 +223,9 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
-  background-color: #c69efb; /* Cambia el color a tu preferencia */
 }
-
-.parte7 {
-  background-size: cover;
-  background-position: center;
-  height: 730px;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f6eaf5; /* Cambia el color a tu preferencia */
-}
-
+.parte7,
 .parte8 {
   background-size: cover;
   background-position: center;
@@ -222,7 +236,107 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
-  background-color: #ffffff; /* Cambia el color a tu preferencia */
+}
+
+.parte2 img {
+  height: 446px;
+  width: 678px;
+}
+
+.parte2 h1,
+.parte3 h1,
+.parte5 h1,
+.parte6 h1,
+.parte7 h1,
+.parte8 h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 64px;
+}
+
+.parte2 .h {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+}
+
+.parte5 h1 {
+  font-size: 32px;
+}
+
+.parte6 h1 {
+  font-size: 35px;
+}
+
+.parte6 p {
+  font-size: 30px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -16px;
+}
+
+.pricing-card {
+  width: calc(33.33% - 32px);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  margin: 16px;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.pricing-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.pricing-features {
+  margin-bottom: 32px;
+  list-style: none;
+}
+
+.pricing-features li {
+  margin-bottom: 8px;
+}
+
+.pricing-button {
+  display: block;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.pricing-button:hover {
+  background-color: #e1e1e1;
+}
+
+.card {
+  width: calc(33.33% - 32px);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  margin: 16px;
+}
+
+.div .card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -16px;
+}
+
+.contenedor_tarjetas {
+  display: flex;
 }
